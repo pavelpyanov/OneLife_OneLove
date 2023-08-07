@@ -15,7 +15,7 @@ export const getExchangeDay = ({ month, year, type }: Props) => {
     throw new Error("Года нет в календаре");
   }
 
-  const standartDate = type === "prepayment" ? 28 : calendar[month].days;
+  const standartDate = type === "prepayment" ? 15 : calendar[month].days;
 
   let day = standartDate;
 
